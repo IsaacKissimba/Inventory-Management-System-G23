@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMS | Dashboard</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="src\css\main.css">
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/1c3a9f7338.js"></script>
+</head>
+<body>
+    <div class="container">
+        <section class="dashboard">
+            <div class="leftPanel">
+                <section class="dashboardLeftSection">
+                    <div class="dashboardLeftOption">
+                        <i class="fas fa-home"></i>
+                        <a href="#">
+                            Home
+                        </a>
+                    </div>
+            
+                    <div class="dashboardLeftOption">
+                        <i class="fas fa-box-open"></i>
+                        <a href="">
+                            Products
+                        </a>
+                    </div>
+            
+                    <div class="dashboardLeftOption">
+                        <i class="fas fa-cart-plus"></i>
+                        <a href="">
+                            Add Inventory
+                        </a>
+                    </div>
+
+                    <div class="dashboardLeftOption">
+                        <i class="fas fa-pencil-alt"></i>
+                        <a href="">
+                            Update Inventory
+                        </a>
+                    </div>
+            
+                    <div class="dashboardLeftOption">
+                        <i class="fas fa-trash"></i>
+                        <a href="">
+                            Remove Inventory
+                        </a>
+                    </div>
+            
+                    <div class="dashboardLeftOption">
+                        <i class="fas fa-users"></i>
+                        <a href="User.html">
+                            Users
+                        </a>
+                    </div>
+            
+                    <div class="dashboardLeftOption">
+                        <i class="fas fa-bell"></i>
+                        <a href="" id="innerNotificationMessage">
+                            Notifications
+                            <div class="innerNotification">
+                                <h4>32</h4>
+                            </div>
+                        </a>
+                    </div>
+            
+                    <div class="dashboardLeftOption">
+                        <i class="fas fa-chart-bar"></i>
+                        <a href="">
+                            Analytics
+                        </a>
+                    </div>
+                </section>
+            </div>
+
+            <div class="righPanel">
+                <header class="dashboardHeading">
+                    <h1>
+                        Inventory Dashboard
+                    </h1>
+                </header>
+                
+                <!-- PLEASE NOTE!!!-->
+                <!-- 
+                    The class here below named dashboardRightSection 
+                    has grid styling rules set to it.
+                    TO REMOVE THIS, PLEASE RENAME THE CLASS TO 
+                    dashboardRightSectionGen
+                 -->
+                <section class="dashboardRightSection"> 
+                  
+                <style type="text/css">
+
+                    *{
+                       margin: 0;
+                       padding: 0;
+                       outline: 0;
+                    } 
+   
+   
+                    .filter{
+                       position: absolute;
+                       top: 0;
+                       left: 0;
+                       right: 0;
+                       bottom: 0;
+                       z-index: 0;
+                       opacity: 0;
+                    }  
+   
+                    table{
+   
+                       position: absolute;
+                       z-index: 2;
+                       left: 60%;
+                       top: 50%;
+                       transform: translate(-50%,-50%);
+                       width: 60%;
+                       border-collapse: collapse;
+                       border-spacing: 0;
+                       border-radius: 12px 12px 0 0;
+                       overflow: hidden;
+                
+                      background: #fafafa;
+                       text-align:right;
+                    }
+                    
+                    th,td{
+                       padding: 12px 15px;
+                    }
+   
+   
+   
+   
+                    th{
+                       background: #dda0dd;
+                       
+                       text-transform: uppercase;
+                       font-family: 'Roboto' sans-serif;
+                    }
+   
+                    td{
+                       font-family: 'Open Sans' sans-serif;
+                    }
+
+
+              
+                   </style>
+   
+                       <body>
+     
+                           <div class="filter">
+                               
+                           </div>
+   
+                           <table>
+                               <tr>
+                                   <th>Product Name</th> 
+                                    <th>Product Number</th> 
+                                     <th>Product Weight</th> 
+                                      <th>Supplier</th> 
+                                       <th>Product Price</th> 
+   
+                               </tr>
+   
+                               <tr>
+                                   <td>Playstion 4</td>
+                                   <td>678-987</td>
+                                   <td>12Kg</td>
+                                   <td>Sony</td>
+                                   <td>R6800</td>
+                               </tr>
+   
+                               <tr>
+                                   <td>Xbox One</td>
+                                   <td>354-987</td>
+                                   <td>14Kg</td>
+                                   <td>Microsoft</td>
+                                   <td>R7700</td>
+                               </tr>
+   
+                               <tr>
+                                   <td>MacBook 2021</td>
+                                   <td>234-759</td>
+                                   <td>16Kg</td>
+                                   <td>Apple</td>
+                                   <td>R19800</td>
+                               </tr>
+                               <tr>
+                                   <td>Samsung Tv</td>
+                                   <td>988-356</td>
+                                   <td>26Kg</td>
+                                   <td>Samsung</td>
+                                   <td>R5750</td>
+                               </tr>
+   
+                               <tr>
+                                   <td>Iphone 12 Max Po</td>
+                                   <td>245-635</td>
+                                   <td>2Kg</td>
+                                   <td>Apple</td>
+                                   <td>R24550</td>
+                               </tr>
+   
+                               <tr>
+                                   <td>Iphone XR</td>
+                                   <td>678-878</td>
+                                   <td>2Kg</td>
+                                   <td>Apple</td>
+                                   <td>R9800</td>
+                               </tr>
+   
+                               <tr>
+                                   <td>Asus Vivo</td>
+                                   <td>324-763</td>
+                                   <td>14Kg</td>
+                                   <td>Asus</td>
+                                   <td>R6700</td>
+                               </tr>
+   
+                               <tr>
+                                   <td>Apple Watch</td>
+                                   <td>379-467</td>
+                                   <td>1Kg</td>
+                                   <td>Apple</td>
+                                   <td>R5400</td>
+                               </tr>
+   
+                               <tr>
+                                   <td>Speaker</td>
+                                   <td>928-677</td>
+                                   <td>12Kg</td>
+                                   <td>Sony</td>
+                                   <td>R8000</td>
+                               </tr>
+   
+                               <tr>
+                                   <td>AirPords</td>
+                                   <td>243-435</td>
+                                   <td>0.4Kg</td>
+                                   <td>Apple</td>
+                                   <td>R3400</td>
+                               </tr>
+   
+   
+                           </table>
+   
+   
+   
+                       </body>
+   
+                            </section>
+                        </div>                      
+                    </div>
+                </section>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
